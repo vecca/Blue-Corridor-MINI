@@ -61,7 +61,7 @@ p.lead {
 .heading-tertiary {
   font-size: 1.6rem;
   @mixin atLarge {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 }
 

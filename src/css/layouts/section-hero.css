@@ -1,8 +1,11 @@
 .section-hero {
-  /* background-color: $color-primary; */
-  padding: 8rem 0 4rem 0;
+  background: linear-gradient(to top right, rgba(16, 16, 61, 1) 0%, rgba(16, 16, 61, 01) 30%, rgba(16, 16, 61, 0.7) 100%), url("../assets/images/SanFran-bg--1920w-B&W.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 4rem 0;
   @mixin atLarge {
-    padding: 10rem 0 10rem 0;
+    /* padding: 10rem 0 10rem 0; */
+    height: 80vh;
   }
 }
 
@@ -25,6 +28,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1.8rem;
+    padding-top: 2rem;
 
     .heading-primary {
       grid-column: 1 / -1;
