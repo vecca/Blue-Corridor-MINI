@@ -1,0 +1,15 @@
+/* COLOR VARIABLES */
+$color-primary: rgb(16, 16, 61);
+$color-primary-light: rgb(148, 171, 240);
+$color-secondary: rgb(30, 27, 78);
+$color-secondary-transparent: rgba(30, 27, 78, 0.4);
+$color-accent: #4682b4;
+
+/* FONT VARIABLES */
+$font-headings: "Playfair Display", serif;
+$font-body: "Inter", serif;
+
+/*
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

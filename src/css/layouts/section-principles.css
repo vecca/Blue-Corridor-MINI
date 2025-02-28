@@ -1,0 +1,45 @@
+.section-principles {
+  position: relative;
+  z-index: 130;
+  /* background-color: $color-primary; */
+  padding: 3.2rem 0;
+  @mixin atLarge {
+    padding: 6.4rem 0;
+  }
+}
+
+.principles-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.4rem;
+
+  @mixin atMedium {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @mixin atXL {
+    justify-content: center;
+    column-gap: 6.4rem;
+  }
+}
+
+.principle {
+  background-color: $color-secondary;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  @mixin atLarge {
+    height: 350px;
+    width: 350px;
+    padding: 4rem;
+  }
+}

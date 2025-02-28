@@ -1,0 +1,36 @@
+.section-sectors {
+  padding: 3.2rem 0;
+  position: relative;
+  z-index: 125;
+
+  @mixin atLarge {
+    padding: 6.4rem 0;
+  }
+}
+
+.sectors-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  margin: 0 auto;
+
+  @mixin atLarge {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+  }
+
+  .sector {
+    padding: 4rem;
+    background-color: $color-secondary-transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    &-icon {
+      width: 6rem;
+      margin-bottom: 1rem;
+      fill: red;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.section-hero {
+  /* background-color: $color-primary; */
+  padding: 8rem 0 4rem 0;
+  @mixin atLarge {
+    padding: 10rem 0 10rem 0;
+  }
+}
+
+.hero {
+  max-width: 150rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* align-items: center; */
+  margin: 0px auto;
+  padding: 0px 3.2rem;
+  gap: 9.6rem;
+  padding: 0 3.2rem;
+
+  @mixin atXL {
+    grid-template-columns: 3fr 1fr;
+    height: 60vh;
+  }
+
+  &-text-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1.8rem;
+
+    .heading-primary {
+      grid-column: 1 / -1;
+    }
+
+    .hero-desc {
+      grid-column: 1 / -1;
+    }
+
+    @mixin atLarge {
+      .hero-desc {
+        grid-column: 1 / 3;
+      }
+    }
+    text-align: left;
+  }
+}

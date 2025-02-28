@@ -1,0 +1,10 @@
+.footer {
+  padding: 6.4rem 0;
+  background-color: #020024;
+  position: relative;
+  z-index: 105;
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
