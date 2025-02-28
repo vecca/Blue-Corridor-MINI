@@ -56,7 +56,6 @@
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
   transition: all 0.3s;
-  text-transform: uppercase;
   font-family: $font-body;
 }
 

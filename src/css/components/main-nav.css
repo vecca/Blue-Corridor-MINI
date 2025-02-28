@@ -13,12 +13,11 @@
 }
 
 .navigation {
-  background-color: trensparent;
+  background-color: $color-primary;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
+  position: relative;
+  height: 60px;
   padding: 0 3.2rem 0 3.2rem;
   width: 100%;
 

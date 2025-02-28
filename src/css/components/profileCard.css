@@ -1,0 +1,85 @@
+.section-profile {
+  padding: 3.2rem 0;
+
+  @mixin atLarge {
+    padding: 10rem 0;
+    background-color: $color-primary-light;
+  }
+}
+
+.profile-card {
+  display: flex;
+  max-width: 90rem;
+  flex-direction: column;
+  background-color: $color-primary-light;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  @mixin atMedium {
+    flex-direction: row;
+    padding: 4rem;
+  }
+
+  @mixin atLarge {
+    padding: 6rem;
+    box-shadow: none;
+  }
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  @mixin atMedium {
+    margin-right: 4rem;
+    width: 250px;
+    height: 250px;
+  }
+
+  @mixin atLarge {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.profile-text-box {
+  margin-top: 2rem;
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  color: $color-primary;
+  @mixin atLarge {
+    font-size: 4rem;
+  }
+}
+
+.profile-role {
+  font-size: 1.8rem;
+  color: $color-primary;
+  margin-bottom: 10px;
+  @mixin atLarge {
+    font-size: 2.4rem;
+  }
+}
+
+.profile-desc {
+  font-size: 1.6rem;
+  color: $color-primary;
+  @mixin atMedium {
+    font-size: 1.8rem;
+  }
+
+  @mixin atLarge {
+    font-size: 2rem;
+  }
+}
+
+.center-card-lg {
+  display: flex;
+  justify-content: center;
+}
